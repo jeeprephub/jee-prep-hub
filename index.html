@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>JEE Mains & Advanced | Free Study Platform</title>
+
+<style>ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: white;
+  margin: 10px 0;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f6f9;
+}
+
+header {
+    background: linear-gradient(135deg, #1e3a8a, #2563eb);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+header p {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.subjects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #1e3a8a;
+}
+
+.card p {
+    color: #555;
+    font-size: 14px;
+}
+
+.buttons {
+    margin-top: 15px;
+}
+
+.buttons button {
+    border: none;
+    padding: 10px 14px;
+    margin-right: 8px;
+    margin-top: 8px;
+    border-radius: 6px;
+    background-color: #2563eb;
+    color: white;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.buttons button:hover {
+    background-color: #1e40af;
+}
+
+footer {
+    background: #e5e7eb;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>JEE Mains & Advanced</h1>
+  <p>Free Study Materials • Practice Questions • PYQs</p>
+
+  <nav style="margin-top:15px;">
+    <a href="index.html" style="color:white; margin:0 12px;">Home</a>
+    <a href="notes.html" style="color:white; margin:0 12px;">Notes</a>
+    <a href="practice.html" style="color:white; margin:0 12px;">Practice</a>
+    <a href="pyqs.html" style="color:white; margin:0 12px;">PYQs</a>
+  </nav>
+</header>
+<section>
+    <h2>Subjects</h2>
+
+    <div class="subjects">
+
+        <div class="card">
+            <h3>Physics</h3>
+            <p>Mechanics, Thermodynamics, Waves, Optics, Modern Physics</p>
+            <div class="buttons">
+    <button onclick="location.href='notes.html'">View Notes</button>
+<button onclick="location.href='practice.html'">Practice</button>
+<button onclick="location.href='pyqs.html'">PYQs</button>
+</div>
+        </div>
+
+        <div class="card">
+            <h3>Chemistry</h3>
+            <p>Physical, Organic, Inorganic Chemistry</p>
+            <div class="buttons">
+    <button onclick="location.href='notes.html'">View Notes</button>
+<button onclick="location.href='practice.html'">Practice</button>
+<button onclick="location.href='pyqs.html'">PYQs</button>
+</div>
+        </div>
+
+        <div class="card">
+            <h3>Mathematics</h3>
+            <p>Algebra, Calculus, Coordinate Geometry</p>
+            <div class="buttons">
+    <button onclick="location.href='notes.html'">View Notes</button>
+<button onclick="location.href='practice.html'">Practice</button>
+<button onclick="location.href='pyqs.html'">PYQs</button>
+</div>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    © 2025 JEE Study Platform | Free for Students
+</footer>
+
+</body>
+</html>

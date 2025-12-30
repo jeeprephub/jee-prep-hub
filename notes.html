@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JEE Notes</title>
+  <style>ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: white;
+  margin: 10px 0;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+    body {
+      font-family: Arial;
+      padding: 20px;
+      background: #f4f6f9;
+    }
+    h1 {
+      color: #1e3a8a;
+    }
+    a {
+      text-decoration: none;
+      color: #2563eb;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+    <header>
+  <h1>JEE Mains & Advanced</h1>
+  <p>Free Study Materials • Practice Questions • PYQs</p>
+
+  <nav style="margin-top:15px;">
+    <a href="index.html" style="color:white; margin:0 12px;">Home</a>
+    <a href="notes.html" style="color:white; margin:0 12px;">Notes</a>
+    <a href="practice.html" style="color:white; margin:0 12px;">Practice</a>
+    <a href="pyqs.html" style="color:white; margin:0 12px;">PYQs</a>
+  </nav>
+</header>
+
+<h1>📘 JEE Notes</h1>
+<p>Select a subject to start studying.</p>
+
+<select onchange="filterNotes(this.value)" style="padding:10px; margin-bottom:20px;">
+  <option value="all">All Subjects</option>
+  <option value="physics">Physics</option>
+  <option value="chemistry">Chemistry</option>
+  <option value="maths">Mathematics</option>
+</select>
+
+<ul id="notesList">
+  <li data-subject="physics">Physics Notes</li>
+  <li data-subject="chemistry">Chemistry Notes</li>
+  <li data-subject="maths">Mathematics Notes</li>
+</ul>
+
+<br>
+<a href="index.html">⬅ Back to Home</a>
+
+<script>
+function filterNotes(subject) {
+  document.querySelectorAll('#notesList li').forEach(item => {
+    item.style.display =
+      subject === 'all' || item.dataset.subject === subject
+      ? 'list-item' : 'none';
+  });
+}
+</script></body>
+</html>
