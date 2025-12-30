@@ -1,1 +1,1 @@
-# jee-study-platform
+# jee-prep-hub
