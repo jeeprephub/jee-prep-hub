@@ -4,7 +4,78 @@
 <meta charset="UTF-8">
 <title>JEE Mains & Advanced | Free Study Platform</title>
 
-<style>ul {
+<style>
+    .subjects-container {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+    .subject-card button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.subject-card button:hover {
+  background: #1d4ed8;
+}
+    .subject-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  width: 260px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.subject-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+}
+    .signup-note {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  font-style: italic;
+}
+.intro-section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.quote {
+  font-size: 20px;
+  font-style: italic;
+  color: #2c3e50;
+  margin-bottom: 25px;
+}
+
+.intro-text {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0 30px;
+}
+
+.features li {
+  margin: 8px 0;
+  font-size: 15px;
+}
+ul {
   list-style: none;
   padding: 0;
 }
@@ -124,9 +195,40 @@ footer {
   </nav>
 </header>
 <section>
+   <section class="intro-section">
+  <p class="quote">
+    “Success is the sum of small efforts repeated day in and day out.”
+  </p>
+
+  <h2>What is JEEPrepHub?</h2>
+  <p class="intro-text">
+    JEEPrepHub is a free learning platform built for JEE Main & Advanced aspirants.
+    It helps students practice PYQs, revise notes, and prepare smartly
+    without distractions.
+  </p>
+
+  <h3>You can use JEEPrepHub without login</h3>
+  <ul class="features">
+    <li>✔ Access Previous Year Questions (PYQs)</li>
+    <li>✔ Read topic-wise notes</li>
+    <li>✔ Practice subject-wise questions</li>
+    <li>✔ Explore recommended JEE books</li>
+  </ul>
+
+  <h3>Why create a free account?</h3>
+  <ul class="features">
+    <li>✔ Save your progress (coming soon)</li>
+    <li>✔ Resume where you stopped</li>
+    <li>✔ Track preparation level (future feature)</li>
+  </ul>
+
+  <p class="signup-note">
+  🔒 Account system is under development. Sign up will be available soon.
+</p>
+</section>
     <h2>Subjects</h2>
 
-    <div class="subjects">
+    <div class="subjects-container">
 
         <div class="card">
             <h3>Physics</h3>
